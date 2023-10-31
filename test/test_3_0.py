@@ -16,11 +16,11 @@ def test_cuenta(inPalabra, inLetra, outNumero):
 @pytest.mark.parametrize(
     "inPalabra, inLetra, outNum_error",
     [
-        ("Toro br4v0", "1e", 5),
-        ("mart!l1e4ndo", "7", 1),
-        ("Instituto", "", 2),
+        ("Toro br4v0", "1e", 1),
+        ("mart!l1e4ndo", "7", 2),
+        ("Instituto", "", 3),
         ("Azulado", "La", 4),
-        ("alemanes", "4", 3),
+        ("alemanes", "4", 5),
         ("Amarillo", "L", 0),
     ]
 )
