@@ -1,13 +1,13 @@
 import pytest
-from src.Ej_1_0 import function
+from src.Ej_1_0 import revertir_cadena
 
 
 @pytest.mark.parametrize(
-    "inMensaje, outMensaje",
+    "inCadena_inicial, outReversa_newline",
     [
-        ("Entrada1", "Salida1"),
-        ("Entrada2", "Salida2"),
+        ("Entrada", "a\nd\na\nr\nt\nn\nE"),
+        ("Me gusta la pizza", "a\nz\nz\ni\np\n \na\nl\n \na\nt\ns\nu\ng\n \ne\nM")
     ]
 )
-def test_function(inMensaje, outMensaje):
-    assert function(inMensaje) == outMensaje
+def test_revertir_cadena(inCadena_inicial, outReversa_newline):
+    assert revertir_cadena(inCadena_inicial) == outReversa_newline
